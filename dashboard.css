@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+#menu {
+    width: 300px;
+    height: 100%;
+    background-color:#111827;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 30px 0 0 20px;
+}
+#menu .logo h2 {
+    font-style: italic;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+#menu .logo h2:hover {
+    color: gray;
+}
+img {
+    width: 50px; 
+    height:50px;
+    margin-left: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.items {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+li {
+    list-style: none;
+    padding: 15px 0;
+}
+button {
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+button:hover {
+    color: gray;
+}
+
+#menu .items li i {
+    color: rgb(134, 141, 151);
+    line-height: 30px;
+    width: 3px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 10px 0 30px;
+}
+#menu .items li:nth-child(1) {
+    border-left:4px solid #fff;
+}
+#menu .items li:hover i,
+#menu .items li:hover a {
+    color: #fff;
+}
+#menu .items li  {
+    color: rgb(134, 141, 151);
+    transition: 0.5s ease;
+}
+#menu .items li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+#menu .items li a {
+    transition: 0.5s ease;
+}
+.n1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#menu-btn {
+    display: none;
+    color: #2b2b2b;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#Interface {
+   width: calc(100% - 300px);
+   margin-top: none;
+   margin-left: 300px;
+   position: relative;
+   background-color: rgba(232, 231, 230, 0.908);
+
+}
+#Interface .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 4px solid #594ef7;
+    position: fixed;
+    width: calc(100% - 300px);
+    background-color:#fff;
+}
+
+#Interface .nav-bar .search-bar {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 10px 14px;
+    border: 1px solid rgb(246, 244, 244);
+    border-radius: 20px;
+   
+}
+#Interface .nav-bar .search-bar i {
+    margin-right: 10px;
+}
+#Interface .nav-bar .search-bar input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+#Interface .nav-bar .profile {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    
+}
+#Interface .nav-bar .profile i {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 20px 10px 10px;
+}
+h2 {
+    font-style: italic;
+    cursor: pointer;
+    font-size: 18px;
+}
+h2 i {
+    margin-right: 10px;
+}
+.value-list {
+    padding: 10px 10px 20px 15px;
+    /* padding: 10px 20px 10px 20px; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.i-name {
+    color:#444a53 ;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight:700;
+    margin-top: 70px;
+}
+.values .val-items {
+    background-color:#fff;
+    width: 235px;
+    border-radius: 5px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.values .val-items i {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    font-weight: 800 ;
+    color: #fff;
+    background-color: #111827;
+    text-align: center;
+    margin-right: 10px;
+}
+.value-list .values .val-items:nth-child(1) i{
+    background: #7B74EC;
+}
+.value-list .values .val-items:nth-child(2) i{
+    background: #5C8AF0;
+}
+.value-list .values .val-items:nth-child(3) i{
+    background: #E45D99;
+}
+.value-list .values .val-items:nth-child(4) i{
+    background: #74daec;
+}
+body {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.board {
+    display: flex;
+    justify-content: center;
+    padding: 10px 25px;
+    /* color: #eef0f3; */
+}
+.Active {
+    color: rgb(13, 221, 13);
+    cursor: pointer;
+}
+.board p a:hover{
+   color: red;
+   cursor: pointer;
+}
+.board h5 {
+    font-weight: 600;
+    font-size: 14px;
+}
+.board p {
+    font-weight: 400;
+    font-size: 13px;
+    color: #787d8d;
+}
+.board .people {
+    display: flex; 
+    justify-content: flex-start;
+     align-items: center; 
+     text-align: start; 
+     line-height: 45px;
+  
+}
+table {
+    border-collapse: collapse;
+}
+tr {
+    border-bottom: 1px solid #e4e2e2;
+    background-color: #F9FAFB;
+}
+thead tr {
+    color: #787d8d;
+    font-weight: 500;
+}
+thead td {
+    font-size: 14px;
+    text-transform: uppercase;
+    /* background-color: #F9FAFB; */
+    font-weight: 400;
+    /* text-align: center; */
+    padding: 15px;
+}
+tbody tr td {
+    padding: 10px 15px;
+}
+.Active  {
+    background-color: #d7fada;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    color: #2b2b2b;
+    margin-bottom: 40px;
+}
+tbody tr td p a {
+    color: #554cd1;
+}
+.edit a {
+    font-size: 14px;
+    color: #554cd1;
+    font-weight: 600;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    #menu {
+        width: 270px;
+        position: fixed;
+        left:-270px;
+        transition: 0.5s ease;
+        border-radius: 0;
+    }
+    #menu.Active{
+        left: 0px;
+    }
+    #menu-btn {
+        display: initial;
+    }
+    #Interface {
+        width:100%;
+        margin-left:0px;
+        display: inline-block;
+        transition: 0.5s ease;
+
+    }
+#menu.Active ~ #Interface {
+    width: calc(100% - 200px);
+    margin-left: 270px;
+    transition: 0.5s ease;
+
+}
+    #Interface .nav-bar {
+        width: 100%;
+    }
+    .value-list {
+        padding: 30px 30px 0px 30px;
+        justify-content: flex-start;
+    }
+    .values .val-items {
+        padding: 16px 20px;
+        margin: 10px 20px 10px 0;
+    }
+    .board {
+        width: 100%;
+        padding: 0;
+       overflow-x:hidden;
+       /* margin-left: 20px; */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-left: 30px;
+    }
+}
+
+
+
+@media (max-width:477px) {
+
+    #Interface .nav-bar {
+        padding: 15px;
+    }
+    #Interface .nav-bar .search-bar input {
+        width: 150px;
+    }
+    .i-name {
+        padding: 30px 15px 0 15px;
+    }
+    .value-list  {
+      padding: 15px 15px 0 15px;
+    }
+    .values .val-items {
+       width: 100%;
+       margin: 8px 0;
+    }
+    .board {
+        margin: 30px 15px ;
+    } 
+    
+}
